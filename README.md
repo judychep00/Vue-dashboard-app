@@ -1,44 +1,56 @@
-# product-app
 
-This template should help get you started developing with Vue 3 in Vite.
+# Vue Admin Panel
 
-## Recommended IDE Setup
+A simple admin dashboard built with **Vue 3, Vite, Pinia, and Tailwind CSS**.  
+It demonstrates authentication, protected routes, a dashboard with stats and charts, product management, and an add product form.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+##  Features
+- Authentication with Pinia store
+- Route guards for protected pages
+- Dashboard with stats and Chart.js visualization
+- Products listing and Add Product form
+- Sidebar navigation with logout
 
-## Recommended Browser Setup
+## Login Credentials
+For testing, you can use either:
+- Mock login:
+  - **Username:** emilys  
+  - **Password:** emilyspass
+- DummyJSON API login:
+  - **Username:** kminchelle  
+  - **Password:** 0lelplR
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## 🛠 Setup & Run
+Clone the repository, install dependencies, and start the development server:
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
+git clone https://github.com/judychep00/Vue-dashboard-app.git
+cd Vue-dashboard-app
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
 
-### Compile and Minify for Production
+Project Structure
+src/
+  stores/auth.js      # Pinia store for authentication
 
-```sh
-npm run build
-```
+  views/Login.vue     # Login page
 
-### Lint with [ESLint](https://eslint.org/)
+  views/Dashboard.vue # Dashboard with stats + chart
 
-```sh
-npm run lint
-```
+  views/Products.vue  # Products listing
+
+  views/AddProduct.vue# Add product form
+  App.vue
+Hosting
+
+Deployed on GitHub Pages:
+
+https://judychep00.github.io/Vue-dashboard-app/
+
+
+
+
+
+
+
+
